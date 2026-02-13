@@ -481,7 +481,7 @@ ul {
 /* --- Skills Section --- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -540,7 +540,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin-bottom: 3rem;
 }
 
 .education-card {
@@ -586,21 +585,16 @@ ul {
     color: var(--gray-400);
 }
 
-.subsection-title {
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: 2rem;
-}
-
-.certifications-grid {
+/* --- Languages Section --- */
+.languages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.cert-card {
+.language-card {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius);
@@ -609,29 +603,47 @@ ul {
     transition: var(--transition);
 }
 
-.cert-card:hover {
+.language-card:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
 }
 
-.cert-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 56px;
-    height: 56px;
-    background: var(--gradient);
-    color: var(--white);
-    font-weight: 800;
-    font-size: 0.9rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+.language-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.35rem;
 }
 
-.cert-card p {
-    font-size: 0.9rem;
-    font-weight: 600;
+.language-card p {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+}
+
+/* --- Interests Section --- */
+.interests-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.interest-item {
+    padding: 0.75rem 1.75rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
     color: var(--gray-700);
+    transition: var(--transition);
+}
+
+.interest-item:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+    transform: translateY(-2px);
 }
 
 /* --- Contact Section --- */
@@ -648,7 +660,7 @@ ul {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
